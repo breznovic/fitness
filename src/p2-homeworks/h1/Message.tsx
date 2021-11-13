@@ -12,16 +12,20 @@ type MessageType = {
 function Message(props: MessageType) {
     return (
         <div className={classes.message}>
-            <div>
+            <div className={classes.avatar}>
                 <img src={messageData.avatar}/>
             </div>
-            <div>
-                <p className={classes.name}>{messageData.name}</p>
-                <span className={classes.messageC}>{messageData.message}</span>
+            <div className={classes.messageC}>
+                <div className={classes.messageB}>
+                    <div className={classes.name}>{messageData.name}</div>
+                    <div className={classes.messageU}>{messageData.message}</div>
+                </div>
             </div>
-            <div className={classes.time}>{messageData.time}</div>
+            <div className={classes.time}>
+                <div>{messageData.time}</div>
+            </div>
         </div>
-    )
-}
+            )
+            }
 
-export default Message
+            export default Message
