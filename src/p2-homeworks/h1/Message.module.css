@@ -1,58 +1,42 @@
 .message {
-    width: 918px;
-    height: 210px;
-    background-color: rgb(191, 228, 78);
-    display: grid;
-    grid-template-areas: "avatar m";
-    border-radius: 10px;
-}
-
-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: auto auto 0 10px;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    background-color: grey;
 }
 
 .avatar {
-    grid-area: avatar;
-    margin: auto auto 10px auto;
-    justify-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }
 
-.messageC {
-    grid-area: m;
-    background-color: rgb(16, 32, 6);
-    width: 718px;
-    height: 190px;
-    margin: 10px 10px 10px auto;
-    border-radius: 10px 10px 10px 0;
-    display: grid;
-    grid-template-areas: "s time";
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3) 0);
 }
 
-.messageB {
-    grid-area: s;
-    align-items: center;
-    justify-items: start;
-    font-size: 50px;
-    margin: auto auto auto 40px;
-    display: grid;
-    align-items: center;
-    justify-items: start;
+.content {
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .name {
-    color: rgb(78, 73, 106)
+    color: rgb(78, 73, 106);
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.messageU {
-    color: rgb(191, 228, 78);
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
 }
 
 .time {
-    grid-area: time;
-    color: rgb(49, 66, 41);
-    font-size: 70px;
-    margin: auto 10px 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    color: red;
 }

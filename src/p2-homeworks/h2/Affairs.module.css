@@ -1,3 +1,44 @@
-.someClass {
+.button {
+    margin: 10px;
+    width: 60px;
+    background: cadetblue;
+    color: darkblue;
+    outline: none;
+}
+
+.button:focus {
+    outline: salmon solid 1px;
+}
+
+.button:active {
+    background: saddlebrown;
+}
+
+.active {
+    background: blueviolet;
+}
+
+.affair {
+    display: flex;
+}
+
+.item {
+    margin: 10px;
+    width: 100px;
+}
+
+.high {
+color: red;
+}
+
+.middle {
+color: orange;
+}
+
+.low {
+color: lime;
+}
+
+.button {
 
 }
