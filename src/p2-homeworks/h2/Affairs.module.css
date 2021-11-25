@@ -1,44 +1,49 @@
-.button {
-    margin: 10px;
-    width: 60px;
-    background: cadetblue;
-    color: darkblue;
-    outline: none;
+* {
+    box-sizing: border-box;
 }
-
-.button:focus {
-    outline: salmon solid 1px;
-}
-
-.button:active {
-    background: saddlebrown;
-}
-
-.active {
-    background: blueviolet;
-}
-
-.affair {
+.task {
+    max-width: 400px;
     display: flex;
-}
-
-.item {
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius :10px;
+    padding: 10px;
     margin: 10px;
-    width: 100px;
 }
-
-.high {
-color: red;
+.task span:nth-child(2) {
+    margin-left: auto;
+    margin-right: 30px;
 }
-
-.middle {
-color: orange;
+.task button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: darkred;
 }
-
-.low {
-color: lime;
+.buttons {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
 }
-
-.button {
-
+.buttons button {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.buttons button:nth-child(2) {
+    background: darkred;
+    color: #fff;
+}
+.buttons button:nth-child(3) {
+    background: #fddc00;
+}
+.buttons button:nth-child(4) {
+    background: darkgreen;
+    color: #fff;
 }
