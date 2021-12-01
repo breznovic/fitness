@@ -1,3 +1,8 @@
+.input:focus {
+    outline: none;
+    border: blueviolet solid 3px;
+}
+
 .superInput {
 
 }
