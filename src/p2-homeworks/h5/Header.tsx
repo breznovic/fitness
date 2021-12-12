@@ -1,20 +1,21 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
-import {PATH} from "./Routes";
-import s from "./Header.module.css"
+import {NavLink, useMatch} from "react-router-dom"
+import s from './Header.module.css'
 
 function Header() {
+    let match = useMatch('/PRE_JUNIOR')
 
-    const classActive = (active: { isActive: boolean }) => active.isActive ? s.act : ''
     return (
-        <div className={s.wrapper}>
-            <button className={s.button}>menu</button>
-            <div className={s.menu}>
-                <NavLink className={classActive} to={PATH.PRE_JUNIOR}>PreJunior</NavLink>
-                <NavLink className={classActive} to={PATH.JUNIOR}>Junior</NavLink>
-                <NavLink className={classActive} to={PATH.JUNIOR_PLUS}>JuniorPlus</NavLink>
+        <div className={s.headerS}>
+            <div className={s.container}>
+                <div className={s.navLinks}>
+                    <NavLink to={'/'} className={() => (match ? s.active : s.navLink)}> Main Page </NavLink>
+                    <NavLink to={'/hw1'} className={(navLink) => (navLink.isActive ? s.active : s.navLink)}> Homework 1</NavLink>
+                    <NavLink to={'/hw2'} className={(navLink) => (navLink.isActive ? s.active : s.navLink)}> Homework 2</NavLink>
+                    <NavLink to={'/hw3'} className={(navLink) => (navLink.isActive ? s.active : s.navLink)}> Homework 3</NavLink>
+                    <NavLink to={'/hw4'} className={(navLink) => (navLink.isActive ? s.active : s.navLink)}> Homework 4</NavLink>
+                </div>
             </div>
-
         </div>
     )
 }
