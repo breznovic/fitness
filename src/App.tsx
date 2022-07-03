@@ -1,11 +1,11 @@
 import React from 'react'
 
-function AlternativeAffairs() {
+function App() {
     return (
         <div>
-
+           Website
         </div>
     )
 }
 
-export default AlternativeAffairs
+export default App
